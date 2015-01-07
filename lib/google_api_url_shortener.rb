@@ -6,7 +6,7 @@ Bundler.require :default
 
 class GoogleAPIUrlShortener
   def initialize(key)
-    @client = Google::APIClient.new(:application_name => 'goodlife url shortener', :application_version => '1.0.0')
+    @client = Google::APIClient.new
     @client.key = key
     @client.authorization = nil
     @urlshortener = @client.discovered_api('urlshortener')
