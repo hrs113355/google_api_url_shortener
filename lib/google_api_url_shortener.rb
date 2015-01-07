@@ -9,7 +9,7 @@ class GoogleAPIUrlShortener
     @client = Google::APIClient.new(:application_name => 'goodlife url shortener', :application_version => '1.0.0')
     @client.key = key
     @client.authorization = nil
-    @urlshortener = client.discovered_api('urlshortener')
+    @urlshortener = @client.discovered_api('urlshortener')
   end
 
   def shorten(url)
