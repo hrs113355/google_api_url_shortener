@@ -30,3 +30,4 @@ google_shortener.shorten("https://github.com/hrs113355/google_api_url_shortener"
 ## Changes
 
 * 1.0.1 - first implementation
+* 1.0.2 - add shorted url expand function
