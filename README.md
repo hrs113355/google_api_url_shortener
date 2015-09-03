@@ -1,6 +1,6 @@
 # GoogleAPIUrlShortener
 
-Google Url Shotener implemented by Google API. Initialize Shortener with API key to manage the quota, history of url shortening
+Goo.gl Url Shotener implemented by Google API. Initialize Shortener with API key to avoid reaching request limits accessed by anonymous request.
 
 ## Installation
 
@@ -20,12 +20,18 @@ Or install it yourself as:
 
 ## Usage
 
+First, register a [Google project](https://console.developers.google.com/project) and get API key with `urlshortener` API.
+
 ```
 google_shortener = GoogleAPIUrlShortener.new(GOOGLE_API_KEY)
 google_shortener.shorten("https://github.com/hrs113355/google_api_url_shortener")
+
 => "https://goo.gl/LJbyHv"
+
 google_shortener.expand("https://goo.gl/LJbyHv") # protocol is required
+
 => "https://github.com/hrs113355/google_api_url_shortener"
+
 ```
 
 ## Changes
