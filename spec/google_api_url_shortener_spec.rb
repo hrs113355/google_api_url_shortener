@@ -8,7 +8,8 @@ describe GoogleAPIUrlShortener do
 
       short_url = google_shortener.shorten("http://github.com/hrs113355/google_api_url_shortener")
       short_url.match(/^https?:\/\/goo.gl\//).should_not == nil
-      # todo: check with expanded url in the future
+
+      google_shortener.expand(short_url).should == long_url
     end
   end
 end

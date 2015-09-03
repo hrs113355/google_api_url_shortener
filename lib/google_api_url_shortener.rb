@@ -14,8 +14,14 @@ class GoogleAPIUrlShortener
 
   def shorten(url)
     @result = @client.execute(:api_method => @urlshortener.url.insert, :body_object => { 'longUrl' => url })
-    body = JSON.parse(result.body)
+    body = JSON.parse(@result.body)
     body['id']
+  end
+
+  def expand(short_url)
+    @result = @client.execute(:api_method => @urlshortener.url.get, :parameters => { 'shortUrl' => short_url })
+    body = JSON.parse(@result.body)
+    body['longUrl']
   end
 
   def result
