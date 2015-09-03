@@ -23,8 +23,9 @@ Or install it yourself as:
 ```
 google_shortener = GoogleAPIUrlShortener.new(GOOGLE_API_KEY)
 google_shortener.shorten("https://github.com/hrs113355/google_api_url_shortener")
-
 => "https://goo.gl/LJbyHv"
+google_shortener.expand("https://goo.gl/LJbyHv") # protocol is required
+=> "https://github.com/hrs113355/google_api_url_shortener"
 ```
 
 ## Changes
