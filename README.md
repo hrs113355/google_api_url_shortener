@@ -1,6 +1,6 @@
-# TinyurlShortener
+# GoogleAPIUrlShortener
 
-TODO: Write a gem description
+Google Url Shotener implemented by Google API. Initialize Shortener with API key to manage the quota, history of url shortening
 
 ## Installation
 
@@ -20,12 +20,13 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+```
+google_shortener = GoogleAPIUrlShortener.new(GOOGLE_API_KEY)
+google_shortener.shorten("https://github.com/hrs113355/google_api_url_shortener")
 
-## Contributing
+=> "https://goo.gl/LJbyHv"
+```
 
-1. Fork it ( https://github.com/[my-github-username]/google_api_url_shortener/fork )
-2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am 'Add some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
-5. Create a new Pull Request
+## Changes
+
+* 1.0.1 - first implementation
