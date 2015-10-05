@@ -1,4 +1,6 @@
-# GoogleAPIUrlShortener
+# GoogleAPIUrlShortener  
+
+[![Gem Version](https://badge.fury.io/rb/google_api_url_shortener.svg)](http://badge.fury.io/rb/google_api_url_shortener)  
 
 Goo.gl Url Shotener implemented by Google API. Initialize Shortener with API key to avoid reaching request limits accessed by anonymous request.
 
