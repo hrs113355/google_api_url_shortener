@@ -1,0 +1,13 @@
+language: ruby
+rvm:
+- 1.9.3
+- 2.0.0
+- 2.1
+- 2.2
+cache: bundler
+script: bundle exec rake test
+notifications:
+  email: false
+env:
+  global:
+    secure: 2HSbsHyXA3p5zLygyYs7ScBEQwHnLyVfEYY5+E1nkH4Tv2/LJJ4FYA2FDb2/Hw6+J0YWUFnS4H0jJWcYulIxgBAQksx0sWox5SdYLu4STsGpj51yYFuDzHFcbB1ldq6OnIIMTcnlaclwC7hSL/hAZTuuu6v5ETxAm4yvRTve2Bp25LozNZNIyvQGLTOO/e9LSITr4grLarXXKjnd+b8OyZm0RN3nIkq5kDSncVS7MhRsGsmpGJf+LHQetNM5uJA3UtOBGYYbwa8denQhL/dSygX5HvCuOfrGxz/FEBkL28/EY0nUB1BU7m/o5P0tAyanLgSG0X4HJXTLUXuPdun8Ozvwh1hI8SN09znmIkxxYPMWDxtszQl+G2ffutRV7iNBekwH0GL+zzumLlsMduU6W9q4S02A8dEAgj+zJn8Wg56M4wzfB6BxXtB3Drm3G9vM1PCdWFVhsk4KmXvF27FWz83RLC0hx4zLPg5XQ2lCtSbjCo9l+XBBFekK3N87UNLks844k+u/Iuw65OeT+sGOwQm0sU2s6m2lvQV/Djeh+4PY9uDQsqktJckeiYPYCH0rX0uT9JaudbP4uuSpT8dT115rpfAbjb6DYTLxSgmhu1SEJInebi8hdTqo3UbBCC7T6t2X62mUYb2o2Fs+lMcS9dp8MxtthfTRCmzA+aQUcak=

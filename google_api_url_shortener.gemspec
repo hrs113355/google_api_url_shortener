@@ -9,7 +9,7 @@ Gem::Specification.new do |spec|
   spec.authors       = ["hrs"]
   spec.email         = ["hrs113355@gmail.com"]
   spec.summary       = %q{Googl url shortener with google api.}
-  spec.description   = %q{Googl url shortener with google api.}
+  spec.description   = %q{Goo.gl Url Shotener implemented by Google API. Initialize Shortener with API key to avoid reaching request limits accessed by anonymous request.}
   spec.homepage      = "https://github.com/hrs113355/google_api_url_shortener"
   spec.license       = "MIT"
 
